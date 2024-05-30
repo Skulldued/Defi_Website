@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* This is global css code  when we write any code inside index.css it is accessible to any files */
+
+*{
+  @apply font-[Montserrat]
+}
+
+:root{
+  --primary-blue:#00d8ff;
+  --primary-purple:#6a00ff;
+}
+@layer base{
+  h1{
+    @apply text-3xl font-bold
+  }
+  li{
+    @apply px-4 font-bold
+  }
+  button{
+    @apply bg-gradient-to-r from-[var(--primary-purple)] to-[var(--primary-blue)] py-3 px-7 rounded-full
+  }
+}
